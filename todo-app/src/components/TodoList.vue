@@ -21,9 +21,11 @@ export default {
         },
         completeTodo(todo) {
             const todoIndex = this.todos.indexOf(todo);
-            console.log('LOOK HERE', todoIndex);
-            console.log('LOOK HERE TOO', this.todos[todoIndex]);
-            this.todos[todoIndex].done = true;
+            if(this.todos[todoIndex].done) {
+                console.log('TRUEEEE');
+                return this.todos[todoIndex].done = false;
+            }
+                this.todos[todoIndex].done = true;
         }
     }
 };
