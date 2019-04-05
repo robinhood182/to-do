@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <img src="https://media0.giphy.com/media/J7jsbfcJ2O5eo/giphy.webp?cid=790b76115ca7b7da4a36387963ae49fc">
     <TodoList v-bind:todos="todos"/>
     <CreateTodo v-on:add-todo="addTodo"/>
   </div>
@@ -55,5 +55,10 @@ export default {
 </script>
 
 <style>
-
+  img {
+   display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+  }
 </style>
