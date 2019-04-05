@@ -1,2 +1,2 @@
 # to-do
-to do app fro practice with VueJS
+to do app for practice with VueJS
