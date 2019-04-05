@@ -18,22 +18,22 @@ export default {
     return {
       todos: [{
         title: 'Todo A',
-        project: 'Project A',
+        description: 'Description A',
         done: false
       },
       {
         title: 'Todo B',
-        project: 'Project B',
+        description: 'Description B',
         done: true
       },
       {
         title: 'Todo C',
-        project: 'Project C',
+        description: 'Description C',
         done: false
       },
       {
         title: 'Todo D',
-        project: 'Project D',
+        description: 'Description D',
         done: false
       }]
     }
