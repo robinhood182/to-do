@@ -2,16 +2,29 @@
   <div id="app">
     <img src="./assets/logo.png">
     <TodoList v-bind:todos="todos"/>
+    <CreateTodo v-on:add-todo="addTodo"/>
   </div>
 </template>
 
 <script>
 import TodoList from './components/TodoList'
+import CreateTodo from './components/CreateTodo'
 
 export default {
   name: 'App',
   components: {
-    TodoList
+    TodoList,
+    CreateTodo
+  },
+
+  methods: {
+    addTodo(todo) {
+      this.todos.push({
+        title: todo.title,
+        description: todo.description,
+        done: false
+      });
+    }
   },
 
   data() {
