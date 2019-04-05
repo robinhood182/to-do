@@ -34,4 +34,5 @@ export default {
     .completed-status {
         text-align: center;
     }
+
 </style>
